@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalkuLove</title>
+    <link rel="stylesheet" href="lovedetector.css">
+
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">Love Detector</a></div>
+            <div class="menu">
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Uji Kecocokan Cinta">Uji Kecocokan Cinta</a></li>
+                    <li><a href="#programmers">Programmers</a></li>
+                    <li><a href="#partners">Partners<a><li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href=""class="tbl-biru">Sign up</a></li>
+                </ul>
+            </div>
+            
+
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!--untuk home-->
+        <section id="home">
+            <img src="https://img.freepik.com/free-vector/couple-walking-together-concept-illustration_114360-13910.jpg?w=740&t=st=1696599914~exp=1696600514~hmac=24c6db906a2c4999ed4596907ab4b5a1f2794b42f5287ab17176263330067cce"/>
+            <div class="kolom">
+                <p class="deskripsi">Kalkulator Cinta</p>
+                <h2>Ingin tahu kecocokan cinta Anda dengan pasangan Anda?</h2>
+                <p>Temukan keajaiban cinta dengan "Kalkulator Cinta" kami: mengungkap rahasia kecocokan romansa Anda dan pasangan Anda dalam hitungan detik!</p>
+            </div>
+            
+        </section>
+
+        <!--untuk courses-->
+        <section id="courses">
+            <div class="kolom">
+                <p class="deskripsi">Uji Kecocokan Cinta</p>
+                <h2>Berapa Persen Kecocokan Cintamu?</h2>
+                <p>Anda merasa tidak cocok atau ragu dengan pasangan Anda?</p>
+                <p>Hitung seberapa besar kecocokan cinta Anda dengan pasangan Anda!</p>
+
+                <!-- Kalkulator Cinta -->
+<div class="form-group">
+    <label for="nama1">Nama Laki-Laki:</label>
+    <input type="text" id="maleName" name="maleName" required>
+</div>
+<div class="form-group">
+    <label for="nama2">Nama Perempuan:</label>
+    <input type="text" id="femaleName" name="femaleName" required>
+</div>
+
+<button onclick="hitungCinta()">Hitung Kecocokan Cinta</button>
+<div id="hasil"></div>
+
+<script>
+    function hitungCinta() {
+        // Dapatkan nilai dari input nama pertama dan kedua
+        var namaPertama = document.getElementById("maleName").value;
+        var namaKedua = document.getElementById("femaleName").value;
+
+        // Hitung jumlah karakter berbeda
+        var karakterBerbeda = 0;
+
+        for (var i = 0; i < namaPertama.length; i++) {
+            if (namaKedua.indexOf(namaPertama[i]) === -1) {
+                karakterBerbeda++;
+            }
+        }
+
+        for (var i = 0; i < namaKedua.length; i++) {
+            if (namaPertama.indexOf(namaKedua[i]) === -1) {
+                karakterBerbeda++;
+            }
+        }
+
+        // Hitung skor kecocokan cinta dalam bentuk persentase
+        var panjangTotal = namaPertama.length + namaKedua.length;
+        var skorKecocokanPersentase = (karakterBerbeda / panjangTotal) * 100;
+
+        // Tampilkan hasil
+        document.getElementById("hasil").innerHTML = "Skor Kecocokan Cinta: " + skorKecocokanPersentase.toFixed(2) + "%";
+    }
+</script>
+
+            </div>
+            <img src="https://img.freepik.com/free-vector/holding-hands-concept-illustration_114360-8448.jpg?w=740&t=st=1696599836~exp=1696600436~hmac=a502424646d19c2c45228ac18fa0a723dcb5c96c4e20ef25cfab7ce617bc9935"/>
+        
+        </section>
+            </div>
+
+        </section>
+
+        <!--untuk Programmer-->
+        <section id="Programmers">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Meet Our Teams!</p>
+                    <h2>Programmers</h2>
+                    
+                </div>
+                
+                <div class="tutor-list">
+                    <div class="kartu-tutor">
+                        <img src="Fitriah.jpg"/>
+                        <p>Fitriah</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="Rani.jpg"/>
+                        <p>Fitri Aulia S.</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="Sukma.jpg"/>
+                        <p>Sukma Azizah</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="Nada.jpg"/>
+                        <p>Nada Salsabila A.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--untuk partners-->
+        <section id="partners">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Our Top Partners</p>
+                    <h2>Partners</h2>
+                    <p>Extraordinary Thank You to</p>
+                </div>
+
+                <div class="partner-list">
+                    <div class="kartu-partner">
+                        <img src="https://freelogopng.com/images/all_img/1681038242chatgpt-logo-png.png"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://www.gamelab.id/uploads/modules/NEWS/559/visual-studio-code-logo.png?1615965617518"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://img.freepik.com/premium-vector/red-youtube-logo-social-media-logo_197792-1803.jpg"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Microsoft_Edge_logo_%282019%29.png"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact">
+        <div class="wrapper">
+            
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy: 2023. <b>FiRa SuDa Programmers</b> All Right Reserved.
+        </div>
+    </div>
+    
+    
+</body>
+</html>
